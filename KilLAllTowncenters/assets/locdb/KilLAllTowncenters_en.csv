@@ -1,0 +1,20 @@
+﻿ID,Pipeline,PipelineStage,Notes,TranslationNotes,Tags,Text
+1,,,Mod name.,,,KilLAllTowncenters
+2,,,Mod description.,,,KilLAllTowncenters
+3,,,,,,Kill All Town Centers
+4,,,,,,Gameplay Options
+5,,,,,,AI Townhall Destruction Behavior
+6,,,,,,Toggles what the AI does when their town hall is destroyed.
+7,,,,,,Surrenders
+8,,,,,,Continues Fighting
+9,,,,,,AI Surrenders as soon as townhall landmark is destroyed.
+10,,,,,,"AI Continues to Fight, and can repair."
+11,,,,,,Construct 5 Houses
+12,,,,,,%1AMOUNT% of each resource added
+13,,,,,,AI Surrenders Due to Unit Destruction
+14,,,,,,AI surrenders after significant amount of forces are destroyed
+15,,,,,,AI surrenders after significant amount of forces are destroyed
+16,,,,,,True
+17,,,,,,Individual AI will surrender if they are facing poor odds
+18,,,,,,False
+19,,,,,,Individual AIs will continue to fight to last unit
