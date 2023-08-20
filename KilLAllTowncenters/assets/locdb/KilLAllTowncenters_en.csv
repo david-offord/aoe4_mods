@@ -18,3 +18,20 @@
 17,,,,,,Individual AI will surrender if they are facing poor odds
 18,,,,,,False
 19,,,,,,Individual AIs will continue to fight to last unit
+20,,,,,,Win Conditions (Extra)
+21,,,,,,Religious (Holy Sites)
+22,,,,,,Capture all the holy sites and hold until victory
+23,,,,,,Capture all the holy sites and hold until victory
+24,,,,,,Wonder
+25,,,,,,Build and hold a wonder until victory
+26,,,,,,Build and hold a wonder until victory
+27,,,,,,Housing Multiplier
+28,,,,,,Change how much population room is given from a house
+29,,,,,,Change how much population room is given from a house
+30,,,,,,1x
+31,,,,,,Houses provide 10 population 
+32,,,,,,2x
+33,,,,,,Houses provide 20 population 
+34,,,,,,Percent of Forces Lost Before AI surrenders
+35,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
+36,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)

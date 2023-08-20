@@ -130,24 +130,11 @@ function Mod_OnGameSetup()
             -- If host sets AI to keep fighting
         elseif _mod.options.gameplay_options.ai_townhall_destruction_behavior.enum_value == _mod.options.gameplay_options.ai_townhall_destruction_behavior.enum_items.continues_fighting then
             -- Store the resource amount selected by the host so it can be referenced elsewhere in the script
-            _mod.ai_behavior = "continues_fighting"
+            __mod.ai_behavior = "continues_fighting"
 
             -- Print the selected option to the console for debugging
             print("OPTION SELECTED: AI Continues Fighting")
         end
-
-        --do logic for extra house cap
-        if _mod.options.gameplay_options.housing_multiplier.enum_value == _mod.options.gameplay_options.housing_multiplier.enum_items.one_x then
-            -- Store the resource amount selected by the host so it can be referenced elsewhere in the script
-            _mod.housing_pop_rate = 0
-        else
-            _mod.housing_pop_rate = 1
-        end
-        print("Housing Population Rate: " .. (_mod.housing_pop_rate))
-
-        --logic for AI surrender rate
-        _mod.ai_loss_percent_before_surrender = round(_mod.options.gameplay_options.ai_loss_percent_before_surrender)
-        print("AI Surrender rate: " .. (_mod.ai_loss_percent_before_surrender))
     end
 end
 
@@ -170,10 +157,9 @@ function Mod_OnInit()
     --Rule_AddOneShot(Mod_SpawnUnits, 5)
     -- INTERVAL RULES: The following rule runs the Mod_GiveResources() function every 60 seconds. This is useful for functions that need to query a game state or perform an action every so often (e.g. give players resources or spawning waves of enemies)
     Rule_AddInterval(Mod_CheckPlayerUnitsAndBuildings, 60)
-
     -- GLOBAL EVENT RULES: The following rule runs the Mod_OnConstructionComplete() function whenever a building is constructed. Type "GE_" in this script to see a list of global events.
     Rule_AddGlobalEvent(Mod_OnConstructionComplete, GE_ConstructionComplete)
-    Rule_AddGlobalEvent(Mod_OnBuildingDestroyed, GE_EntityKilled)
+
     Rule_AddGlobalEvent(Mod_OnEntityLandmarkDestroyed, GE_EntityLandmarkDestroyed)
 
     -- This is a for loop that does something for each player in the match.
@@ -347,11 +333,6 @@ end
 
 -- This function spawns a group of Spearmen next each player's Town Center
 function Mod_OnEntityLandmarkDestroyed(context)
-    --check if this is even a town hall landmark that was destroyed
-    if not Entity_IsEBPOfType(Entity_GetBlueprint(context.landmarkEntity), "town_center_capital") then
-        return
-    end
-
     local landmark_owner = context["landmarkOwner"]["PlayerID"]
     landmark_owner = get_player_by_id(landmark_owner)
 
@@ -388,6 +369,8 @@ function Mod_OnEntityLandmarkDestroyed(context)
         ::continue::
     end
 
+
+    --TODO logic for victory
     get_winner_based_on_destroyed_centers()
 
     --TODO: logic for making AI immediately lose when their town center is destroyed
@@ -402,6 +385,8 @@ function Mod_OnEntityLandmarkDestroyed(context)
             destroy_all_entities_of_player(landmark_owner)
         end
     end
+
+    --TODO: add logic for AI immediately surrendering if unit counts go to low
 end
 
 -- This function checks if a House was constructed, updates the builder's Objective progress, and ends the match if it was their 5th House built
@@ -416,74 +401,57 @@ function Mod_OnConstructionComplete(context)
     if builder ~= nil and not builder.isEliminated then
         -- Check if the builder is the local player
         -- We only want to run the below code for the local player as only their objective UI needs to be updated
-        --if builder.isLocal then
-        -- Check if the building constructed was a house
-        -- The first parameter contains the pbg (proberty bag group) data provided by the global event that tells us which building was constructed
-        -- The second parameter is a Type. All Entities and Squads have a list of Types that help identify them. For example, while each Civilization has a different House entity they all are associated with the Type "house".
-        -- Using the Entity_IsEBPPOfType() function, we can check that the entity constructed was a house easily without first checking what Civilization the player is playing and then checking if they constructed that Civilization's House entity.
-        --if Entity_IsEBPOfType(context.pbg, "house") then
-        --	
-        --	-- Get the player's current objective progress
-        --	local obj_progress_current = Obj_GetCounterCount(_mod.objective)
-        --	-- Since the player constructed a house, calculate their new progress
-        --	local obj_progress_new = obj_progress_current + 1
-        --	-- Update their objective progress UI
-        --	Obj_SetCounterCount(_mod.objective, obj_progress_new)
-        --	Obj_SetProgress(_mod.objective, obj_progress_new / _mod.objective_requirement)
-        --	
-        --	-- If the player constructed their 5th house, set them as the winner and end the match
-        --	if obj_progress_new == _mod.objective_requirement then
-        --		
-        --		-- Since the match is over, loop through every player
-        --		for i, player in pairs(PLAYERS) do
-        --			
-        --			-- If the player being looked at is Allies with the player who constructed their 5th House, set them as the winner
-        --			-- This is done by checking the Relationship (R) of two players using the Player_ObserveRelationship() function. R_ALLY returns true for any players on the same team (and if a player is checked against themself) while R_ENEMY returns true for players on other teams.
-        --			if Player_ObserveRelationship(player.id, builder.id) == R_ALLY then
-        --				
-        --				-- Set the player as a winner and trigger the "Victory" stinger
-        --				Core_SetPlayerVictorious(player.id, Mod_WinnerPresentation, WR_CONQUEST)
-        --				
-        --			-- Otherwise, set them as defeated
-        --			else
-        --				
-        --				-- Set the player as a loser and trigger the "Defeat" stinger
-        --				Core_SetPlayerDefeated(player.id, Mod_LoserPresentation, WR_CONQUEST)
-        --				
-        --			end
-        --		end
-        --		
-        --	-- If this is not the player's 5th house
-        --	else
-        --		
-        --		-- Play a success sound
-        --		-- Additional sound references can be found in cardinal.scar
-        --		-- To open cardinal.scar, scroll to line 44 of this script, right click on "import" and select "Open Document"
-        --		Sound_Play2D("mus_stinger_campaign_triumph_short")
-        --		
-        --	end
-        --end
-        --end
+        if builder.isLocal then
+            -- Check if the building constructed was a house
+            -- The first parameter contains the pbg (proberty bag group) data provided by the global event that tells us which building was constructed
+            -- The second parameter is a Type. All Entities and Squads have a list of Types that help identify them. For example, while each Civilization has a different House entity they all are associated with the Type "house".
+            -- Using the Entity_IsEBPPOfType() function, we can check that the entity constructed was a house easily without first checking what Civilization the player is playing and then checking if they constructed that Civilization's House entity.
+            --if Entity_IsEBPOfType(context.pbg, "house") then
+            --	
+            --	-- Get the player's current objective progress
+            --	local obj_progress_current = Obj_GetCounterCount(_mod.objective)
+            --	-- Since the player constructed a house, calculate their new progress
+            --	local obj_progress_new = obj_progress_current + 1
+            --	-- Update their objective progress UI
+            --	Obj_SetCounterCount(_mod.objective, obj_progress_new)
+            --	Obj_SetProgress(_mod.objective, obj_progress_new / _mod.objective_requirement)
+            --	
+            --	-- If the player constructed their 5th house, set them as the winner and end the match
+            --	if obj_progress_new == _mod.objective_requirement then
+            --		
+            --		-- Since the match is over, loop through every player
+            --		for i, player in pairs(PLAYERS) do
+            --			
+            --			-- If the player being looked at is Allies with the player who constructed their 5th House, set them as the winner
+            --			-- This is done by checking the Relationship (R) of two players using the Player_ObserveRelationship() function. R_ALLY returns true for any players on the same team (and if a player is checked against themself) while R_ENEMY returns true for players on other teams.
+            --			if Player_ObserveRelationship(player.id, builder.id) == R_ALLY then
+            --				
+            --				-- Set the player as a winner and trigger the "Victory" stinger
+            --				Core_SetPlayerVictorious(player.id, Mod_WinnerPresentation, WR_CONQUEST)
+            --				
+            --			-- Otherwise, set them as defeated
+            --			else
+            --				
+            --				-- Set the player as a loser and trigger the "Defeat" stinger
+            --				Core_SetPlayerDefeated(player.id, Mod_LoserPresentation, WR_CONQUEST)
+            --				
+            --			end
+            --		end
+            --		
+            --	-- If this is not the player's 5th house
+            --	else
+            --		
+            --		-- Play a success sound
+            --		-- Additional sound references can be found in cardinal.scar
+            --		-- To open cardinal.scar, scroll to line 44 of this script, right click on "import" and select "Open Document"
+            --		Sound_Play2D("mus_stinger_campaign_triumph_short")
+            --		
+            --	end
+            --end
+        end
 
         if Entity_IsEBPOfType(context.pbg, "house") then
-            Player_SetMaxPopulation(builder.id, CT_Personnel,
-                Player_GetCurrentPopulationCap(builder.id, CT_Personnel) + (10 * _mod.housing_pop_rate))
-        end
-    end
-end
-
-function Mod_OnBuildingDestroyed(context)
-    if context.victimOwner == nil or context.victimOwner.PlayerID == nil then
-        return
-    end
-
-    local victimOwner = get_player_by_id(context.victimOwner.PlayerID)
-
-    -- Check to see if there was a builder (just in case the building was constructed via script or some other means) and that the builder has not been eliminated yet
-    if victimOwner ~= nil and not victimOwner.isEliminated then
-        if Entity_IsEBPOfType(Entity_GetBlueprint(context.victim), "house") then
-            Player_SetMaxPopulation(victimOwner.id, CT_Personnel,
-                Player_GetCurrentPopulationCap(victimOwner.id, CT_Personnel) - (10 * _mod.housing_pop_rate))
+            Player_SetMaxPopulation(builder.id, CT_Personnel, Player_GetMaxPopulationCap(builder.id, CT_Personnel) + 10)
         end
     end
 end
@@ -554,61 +522,22 @@ end
 
 function Mod_CheckPlayerUnitsAndBuildings()
     for i, player in pairs(PLAYERS) do
-        local current_buildings = Player_GetBuildingsCount(player.id)
+        local test = 0
+        local current_buildings = Player_GetBuildingsCountOnly(player.id, test)
         local current_units = Player_GetCurrentPopulation(player.id, CT_Personnel) +
-            Player_GetCurrentPopulation(player.id, CT_Vehicle) + Player_GetCurrentPopulation(player.id, CT_Medic)
-
-        if player.most_buildings < current_buildings then
-            player.most_buildings = current_buildings
-        end
-
-        if player.most_units < current_units then
-            player.most_units = current_units
-        end
-    end
-end
-
---checks if AI has fallen so far behind it deems it unncessary to continue
-function Mod_CheckIfAnyAiShouldSurrender()
-    for i, player in pairs(PLAYERS) do
-        local current_buildings = Player_GetBuildingsCount(player.id)
-        local current_units = Player_GetCurrentPopulation(player.id, CT_Personnel) +
-            Player_GetCurrentPopulation(player.id, CT_Vehicle) + Player_GetCurrentPopulation(player.id, CT_Medic)
-
-        if player.most_buildings < current_buildings then
-            player.most_buildings = current_buildings
-        end
-
-        if player.most_units < current_units then
-            player.most_units = current_units
-        end
-    end
-end
-
-function Mod_CheckIfAiShouldSurrender(player)
-    local current_buildings = Player_GetBuildingsCount(player.id)
-    local current_units = Player_GetCurrentPopulation(player.id, CT_Personnel) +
         Player_GetCurrentPopulation(player.id, CT_Vehicle) + Player_GetCurrentPopulation(player.id, CT_Medic)
 
-    --check if the player has under the threshold needed for buildings
-    if current_buildings < (player.most_buildings / (_mod.ai_loss_percent_before_surrender / 100)) then
-        --check if the player has under the threshold needed for units
-        if current_units < (player.most_units / (_mod.ai_loss_percent_before_surrender / 100)) then
-            make_ai_surrender(player, 5)
+        if player.most_buildings < current_buildings then
+            player.most_buildings = current_buildings
+        end
+
+        if player.most_units < current_units then
+            player.most_units = current_units
         end
     end
 end
 
 --helper functions begin
-
-function make_ai_surrender(player, time_to_show_message)
-    local race_name = get_race_full_name_dave(landmark_owner.raceName)
-    local player_name = player.LocString
-    show_message(player_name .. ' - ' .. race_name .. ' has surrendered!', 5)
-
-    Core_SetPlayerDefeated(landmark_owner.id, Mod_LoserPresentation, WR_CONQUEST)
-    destroy_all_entities_of_player(player)
-end
 
 function length_of_table(tab)
     local count = 0
@@ -724,8 +653,4 @@ function get_winner_based_on_destroyed_centers()
             end
         end
     end
-end
-
-function round(x)
-    return x >= 0 and math.floor(x + 0.5) or math.ceil(x - 0.5)
 end
