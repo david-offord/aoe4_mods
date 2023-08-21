@@ -1,14 +1,14 @@
 ﻿ID,Pipeline,PipelineStage,Notes,TranslationNotes,Tags,Text
-1,,,Mod name.,,,KilLAllTowncenters
-2,,,Mod description.,,,KilLAllTowncenters
+1,,,Mod name.,,,KillAllTowncenters
+2,,,Mod description.,,,KillAllTowncenters
 3,,,,,,Kill All Town Centers
 4,,,,,,Gameplay Options
 5,,,,,,AI Townhall Destruction Behavior
 6,,,,,,Toggles what the AI does when their town hall is destroyed.
 7,,,,,,Surrenders
 8,,,,,,Continues Fighting
-9,,,,,,AI Surrenders as soon as townhall landmark is destroyed.
-10,,,,,,"AI Continues to Fight, and can repair."
+9,,,,,,AI Surrenders as soon as townhall landmark is destroyed
+10,,,,,,"AI Continues to fight after townhall landmark is destroyed, and can repair it"
 11,,,,,,Construct 5 Houses
 12,,,,,,%1AMOUNT% of each resource added
 13,,,,,,AI Surrenders Due to Unit Destruction
@@ -29,9 +29,18 @@
 28,,,,,,Change how much population room is given from a house
 29,,,,,,Change how much population room is given from a house
 30,,,,,,1x
-31,,,,,,Houses provide 10 population 
+31,,,,,,Houses provide 10 population
 32,,,,,,2x
-33,,,,,,Houses provide 20 population 
+33,,,,,,Houses provide 20 population
 34,,,,,,Percent of Forces Lost Before AI surrenders
 35,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
 36,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
+37,,,,,,Percent of Forces Lost Before AI surrenders
+38,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
+39,,,,,,Percent of Forces Lost Before AI surrenders
+40,,,,,,10 percent
+41,,,,,,"When AI loses 10% of max forces, they surrender"
+42,,,,,,Never Surrender
+43,,,,,,AI never surrenders due to unit loss
+44,,,,,,30 Percent
+45,,,,,,"When AI loses 30% of max forces, they surrender"

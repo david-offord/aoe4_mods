@@ -3,32 +3,34 @@
   <RootPanel Orientation="Horizontal">
     <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="226" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
       <LayoutAnchorablePane DockHeight="200" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/20/2023 00:48:23" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/20/2023 22:36:53" />
       </LayoutAnchorablePane>
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
-      <LayoutDocumentPane Id="49e0e72e-c1b7-42f0-b6d4-04d701b178e3">
-        <LayoutDocument Title="KilLAllTowncenters.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\KilLAllTowncenters.scar" ToolTip="C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\KilLAllTowncenters.scar" LastActivationTimeStamp="08/20/2023 02:27:56" />
-        <LayoutDocument Title="KilLAllTowncenters.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x4D4446C4B55DC367" LastActivationTimeStamp="08/20/2023 01:49:30" />
-        <LayoutDocument Title="ebps" ContentId="Category|ebps" LastActivationTimeStamp="08/20/2023 01:40:16" />
-      </LayoutDocumentPane>
-      <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="390">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" ContentId="Output" LastActivationTimeStamp="08/20/2023 01:33:16" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" IsSelected="True" ContentId="ErrorList" LastActivationTimeStamp="08/20/2023 02:27:56" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" LastActivationTimeStamp="08/12/2023 08:42:33" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Palettes" ContentId="ScenarioEditor.Palettes" LastActivationTimeStamp="08/12/2023 08:42:34" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Audio Region Templates" ContentId="ScenarioEditor.AudioRegionTemplate" LastActivationTimeStamp="08/12/2023 23:38:38" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find 'annihilation'" ContentId="FindResults" LastActivationTimeStamp="08/19/2023 23:42:11" />
-      </LayoutAnchorablePane>
+      <LayoutDocumentPaneGroup Orientation="Vertical">
+        <LayoutDocumentPane Id="49e0e72e-c1b7-42f0-b6d4-04d701b178e3" DockHeight="1.39102564102564*">
+          <LayoutDocument Title="KilLAllTowncenters.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\KilLAllTowncenters.scar" ToolTip="C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\KilLAllTowncenters.scar" LastActivationTimeStamp="08/20/2023 22:38:09" />
+          <LayoutDocument Title="upgrade" ContentId="Category|upgrade" LastActivationTimeStamp="08/20/2023 20:43:01" />
+        </LayoutDocumentPane>
+        <LayoutDocumentPane Id="e1d09261-8758-4635-b3e1-465e2d91002a" DockHeight="0.608974358974359*">
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Console" IsSelected="True" ContentId="Console" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/20/2023 14:48:44" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" ContentId="Output" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/20/2023 12:03:59" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/20/2023 12:58:05" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/12/2023 08:42:33" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Palettes" ContentId="ScenarioEditor.Palettes" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/12/2023 08:42:34" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Audio Region Templates" ContentId="ScenarioEditor.AudioRegionTemplate" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/12/2023 23:38:38" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find Results 1" ContentId="FindResults" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/20/2023 12:25:47" />
+        </LayoutDocumentPane>
+      </LayoutDocumentPaneGroup>
     </LayoutPanel>
     <LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="300" DockHeight="200">
       <LayoutAnchorablePane Id="2448ab1e-80b5-4451-ae8a-d68fe2dc4cd9" DockWidth="300" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Properties" IsSelected="True" ContentId="EssenceEditor.Properties" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/13/2023 00:20:48" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Properties" IsSelected="True" ContentId="EssenceEditor.Properties" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/20/2023 12:50:36" />
       </LayoutAnchorablePane>
       <LayoutAnchorablePane Id="78c06263-eb86-40c1-8abf-6d89a3781df0" FloatingWidth="300" FloatingHeight="250" FloatingLeft="200" FloatingTop="200" />
       <LayoutAnchorablePaneGroup Orientation="Horizontal" DockHeight="0.25*" FloatingWidth="300" FloatingHeight="200" FloatingLeft="200" FloatingTop="200">
         <LayoutAnchorablePane DockHeight="100" FloatingWidth="300" FloatingHeight="100" FloatingLeft="200" FloatingTop="200">
-          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Playback" IsSelected="True" ContentId="EssenceEditor.Playback" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="100" LastActivationTimeStamp="08/12/2023 21:53:51" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Playback" IsSelected="True" ContentId="EssenceEditor.Playback" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="100" LastActivationTimeStamp="08/12/2023 21:53:51" />
         </LayoutAnchorablePane>
       </LayoutAnchorablePaneGroup>
     </LayoutAnchorablePaneGroup>
@@ -39,9 +41,9 @@
   <BottomSide />
   <FloatingWindows />
   <Hidden>
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="08/19/2023 23:05:37" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/19/2023 23:05:37" PreviousContainerId="2448ab1e-80b5-4451-ae8a-d68fe2dc4cd9" PreviousContainerIndex="1" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" ContentId="Globals" LastActivationTimeStamp="08/20/2023 01:36:33" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="7" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" ContentId="Locals" LastActivationTimeStamp="08/20/2023 01:36:33" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="5" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="08/20/2023 12:02:58" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/20/2023 12:02:58" PreviousContainerId="2448ab1e-80b5-4451-ae8a-d68fe2dc4cd9" PreviousContainerIndex="1" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" ContentId="Globals" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/20/2023 14:46:43" PreviousContainerId="e1d09261-8758-4635-b3e1-465e2d91002a" PreviousContainerIndex="8" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" ContentId="Locals" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/20/2023 14:46:43" PreviousContainerId="e1d09261-8758-4635-b3e1-465e2d91002a" PreviousContainerIndex="7" />
   </Hidden>
 </LayoutRoot>

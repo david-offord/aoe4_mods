@@ -10,7 +10,6 @@
 					<d2p1:Value>
 						<d2p1:string>assets\attrib</d2p1:string>
 						<d2p1:string>assets\locdb\KilLAllTowncenters.locdb</d2p1:string>
-						<d2p1:string>assets\locdb\KilLAllTowncenters_en.csv</d2p1:string>
 						<d2p1:string>assets\scar\winconditions</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
@@ -24,16 +23,16 @@
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\winconditions\KilLAllTowncenters.rdo</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\conditions\do_religious.scar</d3p1:string>
-			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\wonder.scar</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\KilLAllTowncenters.scar</d3p1:string>
-			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\religious.scar</d3p1:string>
-			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\conquest.scar</d3p1:string>
-			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\cardinal.scar</d3p1:string>
-			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\annihilation.scar</d3p1:string>
 			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\locdb\KilLAllTowncenters.locdb</d3p1:string>
 			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\attrib\g.xml</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\mod.png</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\mod.rdo</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\_default.burnproj</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\winconditions\KilLAllTowncenters.rdo</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\KilLAllTowncenters.scar</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\conditions\do_religious.scar</d3p1:string>
+			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\wonder.scar</d3p1:string>
+			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\religious.scar</d3p1:string>
 		</History>
 	</RecentFiles>
 </ProjectSettings>

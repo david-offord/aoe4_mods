@@ -83,7 +83,7 @@ town_center_ids = {}
 teams_to_town_center = {}
 teams_by_progress = {}
 
-DEBUG_MODE = true
+DEBUG_MODE = false
 MINIMUM_UNITS_BEFORE_SURRENDER = 50
 MINIMUM_BUILDINGS_BEFORE_SURRENDER = 10
 
