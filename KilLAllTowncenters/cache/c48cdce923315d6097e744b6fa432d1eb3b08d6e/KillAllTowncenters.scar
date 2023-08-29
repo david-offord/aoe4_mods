@@ -488,39 +488,26 @@ function Mod_OnConstructionComplete(context)
 end
 
 function Mod_OnEntityKilled(context)
-	local status, err = pcall(entity_killed_pcall,context)
-	
-	if status then
-		print("Entity was killed but it was okay")
-	else
-		print("Entity was killed but it was not okay - "..err)
-		show_message("something broke bro i do not know, you are busted bro you are down bad", 5)
-	end
-	
-end
+    if context.victimOwner == nil or context.victimOwner.PlayerID == nil then
+        return
+    end
 
-function entity_killed_pcall(context) 
-	
-	if context.victimOwner == nil or context.victimOwner.PlayerID == nil then
-		return
-	end
+    local victimOwner = get_player_by_id(context.victimOwner.PlayerID)
 
-	local victimOwner = get_player_by_id(context.victimOwner.PlayerID)
-
-	-- Check to see if there was a builder (just in case the building was constructed via script or some other means) and that the builder has not been eliminated yet
-	if victimOwner ~= nil and not victimOwner.isEliminated then
+    -- Check to see if there was a builder (just in case the building was constructed via script or some other means) and that the builder has not been eliminated yet
+    if victimOwner ~= nil and not victimOwner.isEliminated then
 		--if its a house
-		if Entity_IsEBPOfType(Entity_GetBlueprint(context.victim), "house") then
-			Player_SetMaxPopulation(victimOwner.id, CT_Personnel,
-				Player_GetCurrentPopulationCap(victimOwner.id, CT_Personnel) - (10 * _mod.housing_pop_rate))
-		end
+        if Entity_IsEBPOfType(Entity_GetBlueprint(context.victim), "house") then
+            Player_SetMaxPopulation(victimOwner.id, CT_Personnel,
+                Player_GetCurrentPopulationCap(victimOwner.id, CT_Personnel) - (10 * _mod.housing_pop_rate))
+        end
 		
 		--check the count of entities, if they are an AI
 		if victimOwner.isHuman == false then
 			Mod_CheckIfAiShouldSurrender(victimOwner)
 		end
 		
-	end
+    end
 end
 
 -- Victory Presentation

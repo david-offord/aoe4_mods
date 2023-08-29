@@ -299,7 +299,7 @@
 												<DataProperty Name="m_modPart3" Type="UInt32" Value="983700825"/>
 												<DataProperty Name="m_modPart0" Type="UInt32" Value="3573630404"/>
 												<DataProperty Name="m_modPart1" Type="UInt32" Value="1300249995"/>
-												<DataProperty Name="m_locStringKey" Type="Int32" Value="45"/>
+												<DataProperty Name="m_locStringKey" Type="Int32" Value="47"/>
 											</DataObject>
 										</DataProperty>
 										<DataProperty Name="m_feName" Type="Object">
@@ -310,7 +310,7 @@
 												<DataProperty Name="m_modPart3" Type="UInt32" Value="983700825"/>
 												<DataProperty Name="m_modPart0" Type="UInt32" Value="3573630404"/>
 												<DataProperty Name="m_modPart1" Type="UInt32" Value="1300249995"/>
-												<DataProperty Name="m_locStringKey" Type="Int32" Value="44"/>
+												<DataProperty Name="m_locStringKey" Type="Int32" Value="46"/>
 											</DataObject>
 										</DataProperty>
 										<DataProperty Name="m_isDefaultValue" Type="Bool" Value="false"/>

@@ -35,12 +35,14 @@
 34,,,,,,Percent of Forces Lost Before AI surrenders
 35,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
 36,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
-37,,,,,,Percent of Forces Lost Before AI surrenders
-38,,,,,,Percent of Forces Lost Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
-39,,,,,,Percent of Forces Lost Before AI surrenders
+37,,,,,,Percent of Forces Remaining Before AI surrenders
+38,,,,,,Percent of Forces Remaining Before AI surrenders (example - 20% would lead to AI that once had 200 units surrendering at 40)
+39,,,,,,Percent of Forces Remaining Before AI surrenders
 40,,,,,,10 percent
 41,,,,,,"When AI loses 10% of max forces, they surrender"
 42,,,,,,Never Surrender
 43,,,,,,AI never surrenders due to unit loss
 44,,,,,,30 Percent
 45,,,,,,"When AI loses 30% of max forces, they surrender"
+46,,,,,,20 Percent
+47,,,,,,"When AI loses 20% of max forces, they surrender"

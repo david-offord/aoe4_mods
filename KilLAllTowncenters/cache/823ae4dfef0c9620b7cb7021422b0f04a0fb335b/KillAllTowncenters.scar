@@ -488,13 +488,13 @@ function Mod_OnConstructionComplete(context)
 end
 
 function Mod_OnEntityKilled(context)
-	local status, err = pcall(entity_killed_pcall,context)
+	local status, err = pcall(function () error({code=121}) end)
 	
 	if status then
 		print("Entity was killed but it was okay")
 	else
 		print("Entity was killed but it was not okay - "..err)
-		show_message("something broke bro i do not know, you are busted bro you are down bad", 5)
+		show_message("something broke bro i do not know you are busted bro you are down bad",5)
 	end
 	
 end
