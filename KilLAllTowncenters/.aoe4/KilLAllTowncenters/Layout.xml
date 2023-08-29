@@ -3,17 +3,17 @@
   <RootPanel Orientation="Horizontal">
     <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="226" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
       <LayoutAnchorablePane DockHeight="200" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/28/2023 21:58:12" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/28/2023 23:17:41" />
       </LayoutAnchorablePane>
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPaneGroup Orientation="Vertical">
         <LayoutDocumentPane Id="49e0e72e-c1b7-42f0-b6d4-04d701b178e3" DockHeight="1.22008547008547*">
-          <LayoutDocument Title="KilLAllTowncenters.scar" IsSelected="True" ContentId="FileName|Script|assets\scar\KilLAllTowncenters.scar" ToolTip="C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\KilLAllTowncenters.scar" LastActivationTimeStamp="08/28/2023 21:58:04" />
+          <LayoutDocument Title="KillAllTowncenters.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\KillAllTowncenters.scar" ToolTip="C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\KillAllTowncenters.scar" LastActivationTimeStamp="08/28/2023 23:17:44" />
         </LayoutDocumentPane>
         <LayoutDocumentPane Id="e1d09261-8758-4635-b3e1-465e2d91002a" DockHeight="0.77991452991453*">
           <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Console" ContentId="Console" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/21/2023 22:49:49" />
-          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" IsLastFocusedDocument="True" ContentId="Output" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/28/2023 21:58:04" />
+          <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/28/2023 23:14:48" />
           <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/20/2023 12:58:05" />
           <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/12/2023 08:42:33" />
           <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Palettes" ContentId="ScenarioEditor.Palettes" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/12/2023 08:42:34" />
@@ -40,9 +40,9 @@
   <BottomSide />
   <FloatingWindows />
   <Hidden>
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="08/28/2023 21:58:04" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/28/2023 21:58:04" PreviousContainerId="2448ab1e-80b5-4451-ae8a-d68fe2dc4cd9" PreviousContainerIndex="1" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" IsSelected="True" ContentId="Globals" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/28/2023 21:58:04" PreviousContainerId="e1d09261-8758-4635-b3e1-465e2d91002a" PreviousContainerIndex="9" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" IsSelected="True" ContentId="Locals" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/28/2023 21:58:04" PreviousContainerId="e1d09261-8758-4635-b3e1-465e2d91002a" PreviousContainerIndex="7" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="08/28/2023 23:14:48" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="08/28/2023 23:14:48" PreviousContainerId="2448ab1e-80b5-4451-ae8a-d68fe2dc4cd9" PreviousContainerIndex="1" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" IsSelected="True" ContentId="Globals" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/28/2023 23:14:48" PreviousContainerId="e1d09261-8758-4635-b3e1-465e2d91002a" PreviousContainerIndex="9" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" IsSelected="True" ContentId="Locals" FloatingLeft="-1683" FloatingTop="587" FloatingWidth="1382" FloatingHeight="356" LastActivationTimeStamp="08/28/2023 23:14:48" PreviousContainerId="e1d09261-8758-4635-b3e1-465e2d91002a" PreviousContainerIndex="7" />
   </Hidden>
 </LayoutRoot>

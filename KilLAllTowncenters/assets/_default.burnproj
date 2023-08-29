@@ -155,7 +155,7 @@
 					</d4p1:ArchiveParameters.FileVerificationSetting>
 				</d4p1:FileVerificationSettings>
 				<d4p1:MaximumArchiveSize>0</d4p1:MaximumArchiveSize>
-				<d4p1:Name>KilLAllTowncenters</d4p1:Name>
+				<d4p1:Name>KillAllTownCenters</d4p1:Name>
 				<d4p1:NiceName>d50145c43d8b4d80b56efe845915a23a</d4p1:NiceName>
 				<d4p1:Version>0</d4p1:Version>
 			</Parameters>

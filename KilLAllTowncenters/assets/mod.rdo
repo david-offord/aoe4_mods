@@ -1,9 +1,9 @@
 <DataWarehouse>
-	<!--KilLAllTowncenters/-->
-	<DataObject Name="KilLAllTowncenters" Type="Mod" Id="2036661162593828282" Version="1">
+	<!--KillAllTownCenters/-->
+	<DataObject Name="KillAllTownCenters" Type="Mod" Id="2036661162593828282" Version="1">
 		<DataProperty Name="m_description" Type="Object">
 			<DataValue Name="util::ReflectLocString">4369277961943237985</DataValue>
-			<!--KilLAllTowncenters/util::ReflectLocString/-->
+			<!--KillAllTownCenters/util::ReflectLocString/-->
 			<DataObject Name="" Type="util::ReflectLocString" Id="4369277961943237985" OwnerId="2036661162593828282">
 				<DataProperty Name="m_modPart2" Type="UInt32" Value="2231266997"/>
 				<DataProperty Name="m_modPart3" Type="UInt32" Value="983700825"/>
@@ -14,7 +14,7 @@
 		</DataProperty>
 		<DataProperty Name="m_name" Type="Object">
 			<DataValue Name="util::ReflectLocString">9886705358732332745</DataValue>
-			<!--KilLAllTowncenters/util::ReflectLocString/-->
+			<!--KillAllTownCenters/util::ReflectLocString/-->
 			<DataObject Name="" Type="util::ReflectLocString" Id="9886705358732332745" OwnerId="2036661162593828282">
 				<DataProperty Name="m_modPart2" Type="UInt32" Value="2231266997"/>
 				<DataProperty Name="m_modPart3" Type="UInt32" Value="983700825"/>

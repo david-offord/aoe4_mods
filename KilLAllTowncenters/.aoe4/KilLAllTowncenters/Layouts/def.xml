@@ -9,7 +9,7 @@
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPane Id="49e0e72e-c1b7-42f0-b6d4-04d701b178e3">
         <LayoutDocument Title="Render" ContentId="EssenceEditor.Render" LastActivationTimeStamp="08/12/2023 07:36:07" />
-        <LayoutDocument Title="KilLAllTowncenters.scar*" ContentId="FileName|Script|assets\scar\KilLAllTowncenters.scar" ToolTip="C:\Users\crazy\Documents\KilLAllTowncenters\assets\scar\KilLAllTowncenters.scar" LastActivationTimeStamp="08/12/2023 08:39:45" />
+        <LayoutDocument Title="KillAllTownCenters.scar*" ContentId="FileName|Script|assets\scar\KillAllTownCenters.scar" ToolTip="C:\Users\crazy\Documents\KillAllTownCenters\assets\scar\KillAllTownCenters.scar" LastActivationTimeStamp="08/12/2023 08:39:45" />
         <LayoutDocument Title="Enums" IsSelected="True" IsLastFocusedDocument="True" ContentId="Attributes.Enums" FloatingLeft="-1320" FloatingTop="369" FloatingWidth="1046" FloatingHeight="488" LastActivationTimeStamp="08/12/2023 08:41:54" PreviousContainerId="49e0e72e-c1b7-42f0-b6d4-04d701b178e3" PreviousContainerIndex="3" />
       </LayoutDocumentPane>
       <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="314">

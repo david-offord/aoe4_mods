@@ -3,6 +3,6 @@
 	<DataGenericPath>assets</DataGenericPath>
 	<DataIntermediatePath>cache</DataIntermediatePath>
 	<ID>d50145c4-3d8b-4d80-b56e-fe845915a23a</ID>
-	<LocDBPath>locdb\KilLAllTowncenters.locdb</LocDBPath>
+	<LocDBPath>locdb\KillAllTownCenters.locdb</LocDBPath>
 	<Type>Extension</Type>
 </Mod>

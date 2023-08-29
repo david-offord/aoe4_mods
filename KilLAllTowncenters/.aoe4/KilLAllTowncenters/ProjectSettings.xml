@@ -8,7 +8,7 @@
 				<d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
 					<d2p1:Value>
-						<d2p1:string>assets\attrib\instances\upgrade\races\common\research</d2p1:string>
+						<d2p1:string>assets\attrib</d2p1:string>
 						<d2p1:string>assets\locdb</d2p1:string>
 						<d2p1:string>assets\scar\conditions</d2p1:string>
 						<d2p1:string>assets\scar\winconditions</d2p1:string>
@@ -22,9 +22,9 @@
 			<d3p1:BreakpointSettings>
 				<d3p1:BreakpointSettings>
 					<d3p1:Column>1</d3p1:Column>
-					<d3p1:FileName>FileName|Script|assets\scar\KilLAllTowncenters.scar</d3p1:FileName>
+					<d3p1:FileName>FileName|Script|assets\scar\KillAllTownCenters.scar</d3p1:FileName>
 					<d3p1:IsEnabled>true</d3p1:IsEnabled>
-					<d3p1:Line>493</d3p1:Line>
+					<d3p1:Line>382</d3p1:Line>
 					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
 						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
 						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
@@ -42,15 +42,15 @@
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\_default.burnproj</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\KilLAllTowncenters.scar</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\locdb\KilLAllTowncenters.locdb</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\winconditions\KilLAllTowncenters.rdo</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\attrib\instances\upgrade\races\common\research\spying.xml</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\attrib\g.xml</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\mod.png</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\mod.rdo</d3p1:string>
-			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KilLAllTowncenters\assets\scar\conditions\do_religious.scar</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\_default.burnproj</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\scar\KillAllTownCenters.scar</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\locdb\KillAllTownCenters.locdb</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\scar\winconditions\KillAllTownCenters.rdo</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\attrib\instances\upgrade\races\common\research\spying.xml</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\attrib\g.xml</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\mod.png</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\mod.rdo</d3p1:string>
+			<d3p1:string>C:\Users\crazy\Documents\Programming Projects\AOE4Mods\KillAllTownCenters\assets\scar\conditions\do_religious.scar</d3p1:string>
 			<d3p1:string>C:\Users\crazy\AppData\Local\Temp\wonder.scar</d3p1:string>
 		</History>
 	</RecentFiles>
